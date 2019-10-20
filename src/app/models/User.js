@@ -32,7 +32,7 @@ class User extends Model {
     // hasMany = ID do usuário em vários registros da tabela files
 
     // coluna 'avatar_id' (ID do arquivo) na tabela Users
-    this.belongsTo(models.File, { foreignKey: 'avatar_id' });
+    this.belongsTo(models.File, { foreignKey: 'avatar_id', as: 'avatar' }); // as = alias
   }
 
   checkPassword(password) {

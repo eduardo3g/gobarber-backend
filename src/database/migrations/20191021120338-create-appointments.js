@@ -25,7 +25,7 @@ module.exports = {
         onDelete: 'SET NULL', // when a user is deleted, keep the apoointments with the column user_id = null
         allowNull: true,
       },
-      cancelede_at: {
+      canceled_at: {
         type: Sequelize.DATE,
       },
       created_at: {
